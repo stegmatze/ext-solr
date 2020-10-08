@@ -157,7 +157,7 @@ query.queryFields (query.fields)
 :Type: String
 :TS Path: plugin.tx_solr.search.query.queryFields
 :Since: 1.0
-:Default: content^40.0, title^5.0, keywords^2.0, tagsH1^5.0, tagsH2H3^3.0, tagsH4H5H6^2.0, tagsInline^1.0, description^4.0, abstract^1.0, subtitle^1.0, navtitle^1.0, author^1.0
+:Default: content^40.0, title^5.0, keywords^2.0, tagsH1^5.0, tagsH2H3^3.0, tagsH4H5H6^2.0, tagsInline^1.0, description^4.0, abstract^1.0, subTitle^1.0, navTitle^1.0, author^1.0
 :Note: query.fields has been renamed to query.queryFields in version 3.0
 
 Defines what fields to search in the index. Fields are defined as a comma separated list. Each field can be given a boost by appending the boost value separated by the ^ character, that's Lucene query language. The boost value itself is a float value, pay attention to using a dot as the separator for the fractions. Use this option to add more fields to search.
@@ -337,7 +337,7 @@ query.phrase.fields
 :Type: String
 :TS Path: plugin.tx_solr.search.query.phrase.fields
 :Since: 8.0
-:Default: content^10.0, title^10.0, tagsH1^10.0, tagsH2H3^10.0, tagsH4H5H6^10.0, tagsInline^10.0, description^10.0, abstract^10.0, subtitle^10.0, navtitle^10.0
+:Default: content^10.0, title^10.0, tagsH1^10.0, tagsH2H3^10.0, tagsH4H5H6^10.0, tagsInline^10.0, description^10.0, abstract^10.0, subTitle^10.0, navTitle^10.0
 :See: "pf" parameter https://lucene.apache.org/solr/guide/6_6/the-dismax-query-parser.html#TheDisMaxQueryParser-Thepf_PhraseFields_Parameter
 
 This parameter defines what fields should be used to search in the given phrase. Matched documents will be boosted according to fields boost value.
@@ -391,7 +391,7 @@ query.bigramPhrase.fields
 :Type: String
 :TS Path: plugin.tx_solr.search.query.bigramPhrase.fields
 :Since: 8.0
-:Default: content^10.0, title^10.0, tagsH1^10.0, tagsH2H3^10.0, tagsH4H5H6^10.0, tagsInline^10.0, description^10.0, abstract^10.0, subtitle^10.0, navtitle^10.0
+:Default: content^10.0, title^10.0, tagsH1^10.0, tagsH2H3^10.0, tagsH4H5H6^10.0, tagsInline^10.0, description^10.0, abstract^10.0, subTitle^10.0, navTitle^10.0
 :See: "pf2" parameter https://lucene.apache.org/solr/guide/6_6/the-extended-dismax-query-parser.html#TheExtendedDisMaxQueryParser-Thepf2Parameter
 
 This parameter defines what fields should be used to search in the given sentence(three+ words). Matched documents will be boosted according to fields boost value.
@@ -430,7 +430,7 @@ query.trigramPhrase.fields
 :Type: String
 :TS Path: plugin.tx_solr.search.query.trigramPhrase.fields
 :Since: 8.0
-:Default: content^10.0, title^10.0, tagsH1^10.0, tagsH2H3^10.0, tagsH4H5H6^10.0, tagsInline^10.0, description^10.0, abstract^10.0, subtitle^10.0, navtitle^10.0
+:Default: content^10.0, title^10.0, tagsH1^10.0, tagsH2H3^10.0, tagsH4H5H6^10.0, tagsInline^10.0, description^10.0, abstract^10.0, subTitle^10.0, navTitle^10.0
 :See: "pf3" parameter https://lucene.apache.org/solr/guide/6_6/the-extended-dismax-query-parser.html#TheExtendedDisMaxQueryParser-Thepf3Parameter
 
 This parameter defines what fields should be used to search in the given phrase. Matched documents will be boosted according to fields boost value.
